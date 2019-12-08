@@ -404,7 +404,8 @@ function isTeaser(params) {
 
 //building the nasty toString() for source code return
 function finalProduct() {
-    return  "// Import express modules\n"+
+    return  "//github repo for code: https://github.com/NarthVader/Vacasa\n\n"
+            "// Import express modules\n"+
             "var express = require('express');\n\n"+
             "// Instantiates Express and assigns app variable to it\n"+
             "var app = express();\n\n"+

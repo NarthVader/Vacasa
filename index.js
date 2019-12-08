@@ -404,7 +404,10 @@ function isTeaser(params) {
 
 //building the nasty toString() for source code return
 function finalProduct() {
-    return  "//github repo for code: https://github.com/NarthVader/Vacasa\n\n"
+    return  "//code written in Javascript (index.js)\n"+
+            "//GITHUB REPO FOR CODE:\n"+
+            "//   https://github.com/NarthVader/Vacasa\n"+
+            "///////////////////////\n\n"+
             "// Import express modules\n"+
             "var express = require('express');\n\n"+
             "// Instantiates Express and assigns app variable to it\n"+

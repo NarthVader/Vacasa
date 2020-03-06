@@ -16,10 +16,6 @@ if (port == null || port == "") {
 }
 app.listen(port);
 // Start server
-app.listen(PORT, function () {
-    //Callback triggered when server is successful
-    console.log("Fulfillment app listening on port " + PORT);
-});
 // index page
 app.get('/', function(req, res) {
   request({

@@ -1,0 +1,41 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+<header>
+    <% include ../partials/header %>
+</header>
+
+<main>
+    <div class="jumbotron">
+        <h3>Starfish</h3>
+
+    <table>
+      <tr>
+        <th>Order #</th>
+        <th><a href="/awaitingStarfish">Order Placed</a></th>
+        <th>Tag</th>
+      </tr>
+            <% dummy.forEach(function(dummy) { %>
+             <tr>
+                        <td><%= dummy.order %></td>
+                        <td><%= dummy.date %></td>
+                        <td><%= dummy.tag %></td>
+             </tr>
+            <% }); %>
+        </table>
+    </div>
+</main>
+
+
+<footer>
+    <% include ../partials/footer %>
+</footer>
+
+</body>
+</html>

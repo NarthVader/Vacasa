@@ -9,8 +9,12 @@ var app = express();
 app.set('view engine', 'ejs');
 
 // Listen to specified ngrok port (default=80)
-const PORT=80;
 
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+app.listen(port);
 // Start server
 app.listen(PORT, function () {
     //Callback triggered when server is successful
